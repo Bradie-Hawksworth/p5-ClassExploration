@@ -2,63 +2,64 @@
 
 ## 🤓 Course overview and learning outcomes 💻 
 
-In this assignment we will be exploring Objects. To do this we will be simulating dice 🎲🎲🎲🎲🎲🎲 and how they roll. 
-.
-.
-.
-Sorry I couldn't resist. We're actually going to be moving on from dice (🙌). The following is a description of objects taken from the Mozilla documentation (a link for this can be found at the bottom of this document).
-*'JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value.'*
+In the last assignment we looked at objects. We had a go at creating some object and using them within a project. Objects are widely used when programming, they provide a mechanism to encapsulate data and functionality under a single reference point. 
 
-Objects build on from the work we were doing with variables. Similar to arrays, objects can hold many different items of information this includes variables, arrays and even functions. Variables within an object are known as the objects attributes, functions within an object are known as methods.
+In this assignment we will be answering the question 'What if I need to create many of these object?' and the possible follow up question of 'Do I need to create a new obejct each time?'.
 
-The following syntax is an example of an object being created.
+## Classes
+
+A description of Classes from the Mozilla developer documentation is;
+
+*Classes are a template for creating objects. They encapsulate data with code to work on that data.*
+
+The example of a class from the documentation is;
   
   ```js 
-    let exampleObject = {
-          exampleAttribute : 'value',
-          exampleAttribute2 : 2,
-          exampleMethod : function printExampleAttribute() {
-            print('An example of a function being declared within an object');
-          }
+    class Rectangle {
+      constructor(height, width) {
+        this.height = height;
+        this.width = width;
+      }
     }
    ```
 
-Note the similarities between the syntax of an object and an array. The main difference is that within an object we have to provide a name (key) for the data within the object. 
+The above code defines a rectangle class and provides a constructor. A constructor is a function that's called whenever you create an object with the class as it's type. Up to this point we have been creating anonnymous objects with no specific type, the only information we have had knowledge of is the data within the object and the methods available. 
 
-Objects are regularly used to model 'things' from customers to cars, objects and classes (we'll move on to classes in a future assignment) are the mechanisms we use to encapsulate all information relative to the given thing.
+Classes allow us to create objects that have all the same attributes as the class template that we define. 
 
-## Task - Think about a 'thing' What attributes does the 'thing' have? What can the 'thing' do?
+## Task - Take the code provided in scetch.js and run it in the p5 editor.
 
-Think about either an object or a pet or a person. What attributes could you give that object in your program? 
+What differences can you see? 
 
-Create the object within your program or add some notes to your project describing the intent of your object.
+Post a screen shot of the output here and discuss why you are seeing what is being printed. 
 
-## Accessing attributes and methods of an object
 
-In order to access the methods and attributes of an object, the dot notation should be used. The dot notation takes the following format.
 
-```js
-let exampleObject = {
-          exampleAttribute : 'value',
-          exampleAttribute2 : 2,
-          exampleMethod : function printExampleAttribute() {
-            print('An example of a function being declared within an object');
-          }
-    }
-    
-//This is an example of how you are able to access the attributes within an object
-exampleObject.exampleAttribute;
+We have seen the 'this' keyword before and haven't really discussed it. Why do you think we need to use the this keyword within our objects and classes?
 
-exampleObject.exampleAttribute = 'new value';
 
-//The following is an example of an objects method being called.
-exampleObject.exampleMethod();
-```
+## Task - Experiment with the this keyword in the class and object. What happens if you remove this keyword?
 
-## Task - Implement the 'thing'!
-Thinking back to the 'thing' you thought about in the previous task. Can you call it's functions to make it do something? If you haven't already, try and implement the object in code and try and call it's methods.
+Post screenshots of what happens when these keywords are removed. (It may be worth creating a new branch for this experiment). 
+
+
+Why do you think this is happeneing?
+
+
+
+## Task - Implement something as a class.!
+Take some time to think about something, what properties does it have? What functionality does it have? 
+
+Provide a description of your class below.
+
+
+Provide a list of attributes your class will contain below.
+
+
+Provide a list of functionality your class will contain below.
 
 
   
 ## 📚  Resources / References
-* [Mozilla Working with objects Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+* [Mozilla Working with objects Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+* [Mozilla this keyword Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
