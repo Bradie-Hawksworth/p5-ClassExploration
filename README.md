@@ -47,7 +47,7 @@ Why do you think this is happeneing?
 
 
 
-## Task - Implement something as a class.!
+## Task - Implement something as a class!
 Take some time to think about something, what properties does it have? What functionality does it have? 
 
 Provide a description of your class below.
